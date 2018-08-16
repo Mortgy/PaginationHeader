@@ -14,6 +14,21 @@
 		5042BBC12121D8800032ECD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5042BBBF2121D8800032ECD4 /* LaunchScreen.storyboard */; };
 		5042BBC42121D8800032ECD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042BBC32121D8800032ECD4 /* main.m */; };
 		5042BBCE2121D8810032ECD4 /* PaginationHeaderViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042BBCD2121D8810032ECD4 /* PaginationHeaderViewTests.m */; };
+		5042BBDB2121D8AB0032ECD4 /* PageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042BBDA2121D8AB0032ECD4 /* PageItem.m */; };
+		5042BBE22121D9D30032ECD4 /* Paginator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042BBE12121D9D30032ECD4 /* Paginator.m */; };
+		5042BBE62121DB550032ECD4 /* PaginatorTitlesCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042BBE52121DB550032ECD4 /* PaginatorTitlesCollectionView.m */; };
+		5042BBE92121DB690032ECD4 /* PaginatorViewsCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042BBE82121DB690032ECD4 /* PaginatorViewsCollectionView.m */; };
+		5042BBEC2121E0540032ECD4 /* PaginatorTitleHorizontalViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042BBEB2121E0540032ECD4 /* PaginatorTitleHorizontalViewFlowLayout.m */; };
+		5042BBF22121E6620032ECD4 /* PaginatorTitleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042BBF02121E6620032ECD4 /* PaginatorTitleCollectionViewCell.m */; };
+		5042BBF32121E6620032ECD4 /* PaginatorTitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5042BBF12121E6620032ECD4 /* PaginatorTitleCollectionViewCell.xib */; };
+		5042BBF72121E6770032ECD4 /* PaginatorViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042BBF52121E6770032ECD4 /* PaginatorViewCollectionViewCell.m */; };
+		5042BBF82121E6770032ECD4 /* PaginatorViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5042BBF62121E6770032ECD4 /* PaginatorViewCollectionViewCell.xib */; };
+		5042BBFB2124A1410032ECD4 /* PaginatorViewsHorizontalViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042BBFA2124A1410032ECD4 /* PaginatorViewsHorizontalViewFlowLayout.m */; };
+		5042BC032124DA140032ECD4 /* SampleContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042BC022124DA140032ECD4 /* SampleContentView.m */; };
+		5042BC052124DA200032ECD4 /* SampleContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5042BC042124DA200032ECD4 /* SampleContentView.xib */; };
+		5042BC0A212603A00032ECD4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5042BC072126039A0032ECD4 /* README.md */; };
+		5042BC0B212603A00032ECD4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5042BC082126039C0032ECD4 /* LICENSE */; };
+		5042BC0C212603A00032ECD4 /* PaginationHeader.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5042BC092126039D0032ECD4 /* PaginationHeader.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +55,30 @@
 		5042BBC92121D8810032ECD4 /* PaginationHeaderViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaginationHeaderViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5042BBCD2121D8810032ECD4 /* PaginationHeaderViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaginationHeaderViewTests.m; sourceTree = "<group>"; };
 		5042BBCF2121D8810032ECD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5042BBD92121D8AB0032ECD4 /* PageItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageItem.h; sourceTree = "<group>"; };
+		5042BBDA2121D8AB0032ECD4 /* PageItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageItem.m; sourceTree = "<group>"; };
+		5042BBE02121D9D30032ECD4 /* Paginator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Paginator.h; sourceTree = "<group>"; };
+		5042BBE12121D9D30032ECD4 /* Paginator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Paginator.m; sourceTree = "<group>"; };
+		5042BBE42121DB550032ECD4 /* PaginatorTitlesCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaginatorTitlesCollectionView.h; sourceTree = "<group>"; };
+		5042BBE52121DB550032ECD4 /* PaginatorTitlesCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaginatorTitlesCollectionView.m; sourceTree = "<group>"; };
+		5042BBE72121DB690032ECD4 /* PaginatorViewsCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaginatorViewsCollectionView.h; sourceTree = "<group>"; };
+		5042BBE82121DB690032ECD4 /* PaginatorViewsCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaginatorViewsCollectionView.m; sourceTree = "<group>"; };
+		5042BBEA2121E0540032ECD4 /* PaginatorTitleHorizontalViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaginatorTitleHorizontalViewFlowLayout.h; sourceTree = "<group>"; };
+		5042BBEB2121E0540032ECD4 /* PaginatorTitleHorizontalViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaginatorTitleHorizontalViewFlowLayout.m; sourceTree = "<group>"; };
+		5042BBEF2121E6620032ECD4 /* PaginatorTitleCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaginatorTitleCollectionViewCell.h; sourceTree = "<group>"; };
+		5042BBF02121E6620032ECD4 /* PaginatorTitleCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaginatorTitleCollectionViewCell.m; sourceTree = "<group>"; };
+		5042BBF12121E6620032ECD4 /* PaginatorTitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaginatorTitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		5042BBF42121E6770032ECD4 /* PaginatorViewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaginatorViewCollectionViewCell.h; sourceTree = "<group>"; };
+		5042BBF52121E6770032ECD4 /* PaginatorViewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaginatorViewCollectionViewCell.m; sourceTree = "<group>"; };
+		5042BBF62121E6770032ECD4 /* PaginatorViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaginatorViewCollectionViewCell.xib; sourceTree = "<group>"; };
+		5042BBF92124A1410032ECD4 /* PaginatorViewsHorizontalViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaginatorViewsHorizontalViewFlowLayout.h; sourceTree = "<group>"; };
+		5042BBFA2124A1410032ECD4 /* PaginatorViewsHorizontalViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaginatorViewsHorizontalViewFlowLayout.m; sourceTree = "<group>"; };
+		5042BC012124DA140032ECD4 /* SampleContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleContentView.h; sourceTree = "<group>"; };
+		5042BC022124DA140032ECD4 /* SampleContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleContentView.m; sourceTree = "<group>"; };
+		5042BC042124DA200032ECD4 /* SampleContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleContentView.xib; sourceTree = "<group>"; };
+		5042BC072126039A0032ECD4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5042BC082126039C0032ECD4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5042BC092126039D0032ECD4 /* PaginationHeader.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PaginationHeader.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +102,8 @@
 		5042BBA82121D87A0032ECD4 = {
 			isa = PBXGroup;
 			children = (
-				5042BBB32121D87B0032ECD4 /* PaginationHeaderView */,
+				5042BC0621259D240032ECD4 /* Podspec Metadata */,
+				5042BBB32121D87B0032ECD4 /* PaginationHeader */,
 				5042BBCC2121D8810032ECD4 /* PaginationHeaderViewTests */,
 				5042BBB22121D87B0032ECD4 /* Products */,
 			);
@@ -78,9 +118,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5042BBB32121D87B0032ECD4 /* PaginationHeaderView */ = {
+		5042BBB32121D87B0032ECD4 /* PaginationHeader */ = {
 			isa = PBXGroup;
 			children = (
+				5042BBDC2121D9630032ECD4 /* Classes */,
+				5042BC002124D9F00032ECD4 /* SampleContentView */,
 				5042BBB42121D87B0032ECD4 /* AppDelegate.h */,
 				5042BBB52121D87B0032ECD4 /* AppDelegate.m */,
 				5042BBB72121D87B0032ECD4 /* ViewController.h */,
@@ -91,7 +133,7 @@
 				5042BBC22121D8800032ECD4 /* Info.plist */,
 				5042BBC32121D8800032ECD4 /* main.m */,
 			);
-			path = PaginationHeaderView;
+			path = PaginationHeader;
 			sourceTree = "<group>";
 		};
 		5042BBCC2121D8810032ECD4 /* PaginationHeaderViewTests */ = {
@@ -102,6 +144,91 @@
 			);
 			path = PaginationHeaderViewTests;
 			sourceTree = "<group>";
+		};
+		5042BBD82121D8930032ECD4 /* PageItem */ = {
+			isa = PBXGroup;
+			children = (
+				5042BBD92121D8AB0032ECD4 /* PageItem.h */,
+				5042BBDA2121D8AB0032ECD4 /* PageItem.m */,
+			);
+			path = PageItem;
+			sourceTree = "<group>";
+		};
+		5042BBDC2121D9630032ECD4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5042BBDD2121D96B0032ECD4 /* Paginator */,
+				5042BBEE2121E63F0032ECD4 /* CollectionVIew Cells */,
+				5042BBED2121E05A0032ECD4 /* PaginatorCollectionViewFlow */,
+				5042BBE32121DB2A0032ECD4 /* Paginator CollectionViews */,
+				5042BBD82121D8930032ECD4 /* PageItem */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5042BBDD2121D96B0032ECD4 /* Paginator */ = {
+			isa = PBXGroup;
+			children = (
+				5042BBE02121D9D30032ECD4 /* Paginator.h */,
+				5042BBE12121D9D30032ECD4 /* Paginator.m */,
+			);
+			path = Paginator;
+			sourceTree = "<group>";
+		};
+		5042BBE32121DB2A0032ECD4 /* Paginator CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				5042BBE42121DB550032ECD4 /* PaginatorTitlesCollectionView.h */,
+				5042BBE52121DB550032ECD4 /* PaginatorTitlesCollectionView.m */,
+				5042BBE72121DB690032ECD4 /* PaginatorViewsCollectionView.h */,
+				5042BBE82121DB690032ECD4 /* PaginatorViewsCollectionView.m */,
+			);
+			path = "Paginator CollectionViews";
+			sourceTree = "<group>";
+		};
+		5042BBED2121E05A0032ECD4 /* PaginatorCollectionViewFlow */ = {
+			isa = PBXGroup;
+			children = (
+				5042BBEA2121E0540032ECD4 /* PaginatorTitleHorizontalViewFlowLayout.h */,
+				5042BBEB2121E0540032ECD4 /* PaginatorTitleHorizontalViewFlowLayout.m */,
+				5042BBF92124A1410032ECD4 /* PaginatorViewsHorizontalViewFlowLayout.h */,
+				5042BBFA2124A1410032ECD4 /* PaginatorViewsHorizontalViewFlowLayout.m */,
+			);
+			path = PaginatorCollectionViewFlow;
+			sourceTree = "<group>";
+		};
+		5042BBEE2121E63F0032ECD4 /* CollectionVIew Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5042BBEF2121E6620032ECD4 /* PaginatorTitleCollectionViewCell.h */,
+				5042BBF02121E6620032ECD4 /* PaginatorTitleCollectionViewCell.m */,
+				5042BBF12121E6620032ECD4 /* PaginatorTitleCollectionViewCell.xib */,
+				5042BBF42121E6770032ECD4 /* PaginatorViewCollectionViewCell.h */,
+				5042BBF52121E6770032ECD4 /* PaginatorViewCollectionViewCell.m */,
+				5042BBF62121E6770032ECD4 /* PaginatorViewCollectionViewCell.xib */,
+			);
+			path = "CollectionVIew Cells";
+			sourceTree = "<group>";
+		};
+		5042BC002124D9F00032ECD4 /* SampleContentView */ = {
+			isa = PBXGroup;
+			children = (
+				5042BC012124DA140032ECD4 /* SampleContentView.h */,
+				5042BC022124DA140032ECD4 /* SampleContentView.m */,
+				5042BC042124DA200032ECD4 /* SampleContentView.xib */,
+			);
+			path = SampleContentView;
+			sourceTree = "<group>";
+		};
+		5042BC0621259D240032ECD4 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				5042BC092126039D0032ECD4 /* PaginationHeader.podspec */,
+				5042BC072126039A0032ECD4 /* README.md */,
+				5042BC082126039C0032ECD4 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -185,7 +312,13 @@
 			files = (
 				5042BBC12121D8800032ECD4 /* LaunchScreen.storyboard in Resources */,
 				5042BBBE2121D8800032ECD4 /* Assets.xcassets in Resources */,
+				5042BC0C212603A00032ECD4 /* PaginationHeader.podspec in Resources */,
+				5042BC0B212603A00032ECD4 /* LICENSE in Resources */,
 				5042BBBC2121D87B0032ECD4 /* Main.storyboard in Resources */,
+				5042BC0A212603A00032ECD4 /* README.md in Resources */,
+				5042BBF82121E6770032ECD4 /* PaginatorViewCollectionViewCell.xib in Resources */,
+				5042BC052124DA200032ECD4 /* SampleContentView.xib in Resources */,
+				5042BBF32121E6620032ECD4 /* PaginatorTitleCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,9 +336,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5042BBE92121DB690032ECD4 /* PaginatorViewsCollectionView.m in Sources */,
+				5042BBE22121D9D30032ECD4 /* Paginator.m in Sources */,
+				5042BBF22121E6620032ECD4 /* PaginatorTitleCollectionViewCell.m in Sources */,
 				5042BBB92121D87B0032ECD4 /* ViewController.m in Sources */,
+				5042BBDB2121D8AB0032ECD4 /* PageItem.m in Sources */,
+				5042BBF72121E6770032ECD4 /* PaginatorViewCollectionViewCell.m in Sources */,
+				5042BC032124DA140032ECD4 /* SampleContentView.m in Sources */,
 				5042BBC42121D8800032ECD4 /* main.m in Sources */,
 				5042BBB62121D87B0032ECD4 /* AppDelegate.m in Sources */,
+				5042BBEC2121E0540032ECD4 /* PaginatorTitleHorizontalViewFlowLayout.m in Sources */,
+				5042BBFB2124A1410032ECD4 /* PaginatorViewsHorizontalViewFlowLayout.m in Sources */,
+				5042BBE62121DB550032ECD4 /* PaginatorTitlesCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
