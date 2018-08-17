@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PaginationHeader'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of PaginationHeader.'
+  s.summary          = 'PaginationHeader is made for paging multiple view and syncing the page with the it\'s title header.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,11 +18,11 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+With PaginationHeader you could have multiple pages that each of them does separated job and switch between them through page tabs or the pages it self by scrolling.
                        DESC
 
   s.homepage         = 'https://github.com/mortgy/PaginationHeader'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  # s.screenshots     = 'TBA', 'TBA_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'mortgy' => 'm.mortgy@mortgy.com' }
   s.source           = { :git => 'https://github.com/mortgy/PaginationHeader.git', :tag => s.version.to_s }

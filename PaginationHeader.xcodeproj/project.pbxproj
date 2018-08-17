@@ -42,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5042BBB12121D87B0032ECD4 /* PaginationHeaderView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaginationHeaderView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5042BBB12121D87B0032ECD4 /* PaginationHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaginationHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5042BBB42121D87B0032ECD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5042BBB52121D87B0032ECD4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5042BBB72121D87B0032ECD4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		5042BBC02121D8800032ECD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5042BBC22121D8800032ECD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5042BBC32121D8800032ECD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5042BBC92121D8810032ECD4 /* PaginationHeaderViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaginationHeaderViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5042BBC92121D8810032ECD4 /* PaginationHeaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaginationHeaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5042BBCD2121D8810032ECD4 /* PaginationHeaderViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaginationHeaderViewTests.m; sourceTree = "<group>"; };
 		5042BBCF2121D8810032ECD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5042BBD92121D8AB0032ECD4 /* PageItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageItem.h; sourceTree = "<group>"; };
@@ -112,8 +112,8 @@
 		5042BBB22121D87B0032ECD4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5042BBB12121D87B0032ECD4 /* PaginationHeaderView.app */,
-				5042BBC92121D8810032ECD4 /* PaginationHeaderViewTests.xctest */,
+				5042BBB12121D87B0032ECD4 /* PaginationHeader.app */,
+				5042BBC92121D8810032ECD4 /* PaginationHeaderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,9 +233,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5042BBB02121D87A0032ECD4 /* PaginationHeaderView */ = {
+		5042BBB02121D87A0032ECD4 /* PaginationHeader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5042BBD22121D8810032ECD4 /* Build configuration list for PBXNativeTarget "PaginationHeaderView" */;
+			buildConfigurationList = 5042BBD22121D8810032ECD4 /* Build configuration list for PBXNativeTarget "PaginationHeader" */;
 			buildPhases = (
 				5042BBAD2121D87A0032ECD4 /* Sources */,
 				5042BBAE2121D87A0032ECD4 /* Frameworks */,
@@ -245,14 +245,14 @@
 			);
 			dependencies = (
 			);
-			name = PaginationHeaderView;
+			name = PaginationHeader;
 			productName = PaginationHeaderView;
-			productReference = 5042BBB12121D87B0032ECD4 /* PaginationHeaderView.app */;
+			productReference = 5042BBB12121D87B0032ECD4 /* PaginationHeader.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5042BBC82121D8810032ECD4 /* PaginationHeaderViewTests */ = {
+		5042BBC82121D8810032ECD4 /* PaginationHeaderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5042BBD52121D8810032ECD4 /* Build configuration list for PBXNativeTarget "PaginationHeaderViewTests" */;
+			buildConfigurationList = 5042BBD52121D8810032ECD4 /* Build configuration list for PBXNativeTarget "PaginationHeaderTests" */;
 			buildPhases = (
 				5042BBC52121D8810032ECD4 /* Sources */,
 				5042BBC62121D8810032ECD4 /* Frameworks */,
@@ -263,9 +263,9 @@
 			dependencies = (
 				5042BBCB2121D8810032ECD4 /* PBXTargetDependency */,
 			);
-			name = PaginationHeaderViewTests;
+			name = PaginationHeaderTests;
 			productName = PaginationHeaderViewTests;
-			productReference = 5042BBC92121D8810032ECD4 /* PaginationHeaderViewTests.xctest */;
+			productReference = 5042BBC92121D8810032ECD4 /* PaginationHeaderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -286,7 +286,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5042BBAC2121D87A0032ECD4 /* Build configuration list for PBXProject "PaginationHeaderView" */;
+			buildConfigurationList = 5042BBAC2121D87A0032ECD4 /* Build configuration list for PBXProject "PaginationHeader" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -299,8 +299,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5042BBB02121D87A0032ECD4 /* PaginationHeaderView */,
-				5042BBC82121D8810032ECD4 /* PaginationHeaderViewTests */,
+				5042BBB02121D87A0032ECD4 /* PaginationHeader */,
+				5042BBC82121D8810032ECD4 /* PaginationHeaderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -364,7 +364,7 @@
 /* Begin PBXTargetDependency section */
 		5042BBCB2121D8810032ECD4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5042BBB02121D87A0032ECD4 /* PaginationHeaderView */;
+			target = 5042BBB02121D87A0032ECD4 /* PaginationHeader */;
 			targetProxy = 5042BBCA2121D8810032ECD4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -505,7 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9874853954;
-				INFOPLIST_FILE = PaginationHeaderView/Info.plist;
+				INFOPLIST_FILE = PaginationHeader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -522,7 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9874853954;
-				INFOPLIST_FILE = PaginationHeaderView/Info.plist;
+				INFOPLIST_FILE = PaginationHeader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,7 +548,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mortgy.PaginationHeaderViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaginationHeaderView.app/PaginationHeaderView";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaginationHeader.app/PaginationHeader";
 			};
 			name = Debug;
 		};
@@ -567,14 +567,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mortgy.PaginationHeaderViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaginationHeaderView.app/PaginationHeaderView";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaginationHeader.app/PaginationHeader";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5042BBAC2121D87A0032ECD4 /* Build configuration list for PBXProject "PaginationHeaderView" */ = {
+		5042BBAC2121D87A0032ECD4 /* Build configuration list for PBXProject "PaginationHeader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5042BBD02121D8810032ECD4 /* Debug */,
@@ -583,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5042BBD22121D8810032ECD4 /* Build configuration list for PBXNativeTarget "PaginationHeaderView" */ = {
+		5042BBD22121D8810032ECD4 /* Build configuration list for PBXNativeTarget "PaginationHeader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5042BBD32121D8810032ECD4 /* Debug */,
@@ -592,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5042BBD52121D8810032ECD4 /* Build configuration list for PBXNativeTarget "PaginationHeaderViewTests" */ = {
+		5042BBD52121D8810032ECD4 /* Build configuration list for PBXNativeTarget "PaginationHeaderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5042BBD62121D8810032ECD4 /* Debug */,
