@@ -82,6 +82,11 @@
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
 	
 	PaginatorTitleCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PaginatorTitleCell" forIndexPath:indexPath];
+	
+	if (self.titleFont) {
+		cell.titleLabel.font = self.titleFont;
+	}
+	
 	cell.titleLabel.text = [self.titles objectAtIndex:indexPath.row];
 	cell.titleSelectedColor = self.titlesIndicatorColor;
 	

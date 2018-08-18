@@ -13,5 +13,6 @@
 @property (nonatomic) NSArray <NSString *> * titles;
 @property (nonatomic) UIColor * titlesIndicatorColor;
 @property (nonatomic) float indicatorHeight;
+@property (nonatomic) UIFont * titleFont;
 
 @end
