@@ -21,9 +21,11 @@
 	self.pagingEnabled = YES;
 	self.bounces = NO;
 	
+	NSBundle *classBundle = [NSBundle bundleForClass:[PaginatorViewCollectionViewCell class]];
+	
 	for (int i = 0; i < views.count; i++) {
 		
-		[self registerNib:[UINib nibWithNibName:@"PaginatorViewCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:[NSString stringWithFormat:@"PaginatorViewCell_%@", @(i).stringValue]];
+		[self registerNib:[UINib nibWithNibName:@"PaginatorViewCollectionViewCell" bundle:classBundle] forCellWithReuseIdentifier:[NSString stringWithFormat:@"PaginatorViewCell_%@", @(i).stringValue]];
 	}
 	
 	PaginatorViewsHorizontalViewFlowLayout * layout = [[PaginatorViewsHorizontalViewFlowLayout alloc] init];

@@ -65,7 +65,9 @@
 	PaginatorTitleHorizontalViewFlowLayout * layout = [[PaginatorTitleHorizontalViewFlowLayout alloc] init];
 	self.collectionViewLayout = layout;
 	
-	[self registerNib:[UINib nibWithNibName:@"PaginatorTitleCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"PaginatorTitleCell"];
+	NSBundle *classBundle = [NSBundle bundleForClass:[PaginatorTitleCollectionViewCell class]];
+
+	[self registerNib:[UINib nibWithNibName:@"PaginatorTitleCollectionViewCell" bundle:classBundle] forCellWithReuseIdentifier:@"PaginatorTitleCell"];
 	
 	layout.itemSize = CGSizeMake(self.itemWidth, self.frame.size.height-self.indicatorHeight);
 	layout.indicatorHeight = self.indicatorHeight;
