@@ -8,12 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
+@class PaginatorTitleCollectionViewCell;
+
+@protocol PaginatorTitleCollectionViewCellDelegate
+
+- (void)didSelectTitleCell:(PaginatorTitleCollectionViewCell *)cell;
+
+@end
+
 @interface PaginatorTitleCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic) IBOutlet UILabel *titleLabel;
 @property (nonatomic) UIColor *titleSelectedColor;
+@property (nonatomic) IBOutlet UIButton *titleActionButton;
+@property (nonatomic) id <PaginatorTitleCollectionViewCellDelegate> delegate;
 
 - (void)selectCellItem;
 - (void)deselectCellItem;
 
 @end
+

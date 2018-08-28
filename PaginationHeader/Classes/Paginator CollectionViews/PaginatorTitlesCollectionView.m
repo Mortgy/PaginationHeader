@@ -10,7 +10,7 @@
 #import "PaginatorTitleHorizontalViewFlowLayout.h"
 #import "PaginatorTitleCollectionViewCell.h"
 
-@interface PaginatorTitlesCollectionView ()
+@interface PaginatorTitlesCollectionView () <PaginatorTitleCollectionViewCellDelegate>
 
 @property (nonatomic) UIView *indicatorView;
 @property (nonatomic) float itemWidth;;
@@ -89,6 +89,7 @@
 	
 	cell.titleLabel.text = [self.titles objectAtIndex:indexPath.row];
 	cell.titleSelectedColor = self.titlesIndicatorColor;
+	cell.delegate = self;
 	
 	if (indexPath.row == self.selectedCellIndex) {
 		[cell selectCellItem];
@@ -97,6 +98,10 @@
 	}
 	
 	return cell;
+}
+
+- (void)didSelectTitleCell:(PaginatorTitleCollectionViewCell *)cell {
+	[self collectionView:self didSelectItemAtIndexPath:[self indexPathForCell:cell]];
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {

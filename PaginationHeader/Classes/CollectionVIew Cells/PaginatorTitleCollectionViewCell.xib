@@ -24,14 +24,25 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8n-HU-AtV">
+                        <rect key="frame" x="0.0" y="0.0" width="118" height="50"/>
+                        <connections>
+                            <action selector="didSelectButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="irY-RP-kSg"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="zEH-Xq-eWd" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="1Hm-Wv-u1o"/>
+                <constraint firstAttribute="bottom" secondItem="T8n-HU-AtV" secondAttribute="bottom" id="SKk-8a-bC6"/>
+                <constraint firstItem="T8n-HU-AtV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jxD-O7-tXv"/>
                 <constraint firstItem="zEH-Xq-eWd" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="tkg-Ge-ivR"/>
+                <constraint firstAttribute="trailing" secondItem="T8n-HU-AtV" secondAttribute="trailing" id="tmZ-SA-a1c"/>
+                <constraint firstItem="T8n-HU-AtV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yXu-ef-PK0"/>
             </constraints>
             <size key="customSize" width="118" height="50"/>
             <connections>
+                <outlet property="titleActionButton" destination="T8n-HU-AtV" id="PXm-Ts-cI5"/>
                 <outlet property="titleLabel" destination="zEH-Xq-eWd" id="pWD-ED-ges"/>
             </connections>
             <point key="canvasLocation" x="68" y="54"/>

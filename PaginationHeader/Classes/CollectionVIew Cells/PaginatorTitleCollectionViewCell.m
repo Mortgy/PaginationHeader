@@ -28,5 +28,8 @@
 	self.titleLabel.textColor = [UIColor blackColor];
 }
 
+- (IBAction)didSelectButton:(id)sender {
+	[self.delegate didSelectTitleCell:self];
+}
 
 @end
