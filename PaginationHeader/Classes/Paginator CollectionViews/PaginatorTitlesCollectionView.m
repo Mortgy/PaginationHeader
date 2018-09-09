@@ -26,9 +26,6 @@
 	[super awakeFromNib];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pageViewDidScroll:) name:@"PaginatorViewDidScrollToPage" object:nil];
 	[self addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionOld context:NULL];
-
-//	[[NSNotificationCenter defaultCenter] postNotificationName:@"PaginatorViewDidScrollToPage" object:currentPage];
-
 }
 
 - (void)pageViewDidScroll:(NSNotification *)notification {
@@ -41,35 +38,16 @@
 - (void)setTitles:(NSArray<NSString *> *)titles {
 	_titles = titles;
 	
-	
-	//Check for indicator Height
-	if (self.indicatorHeight == 0.f) {
-		self.indicatorHeight = 2.0f;
-	}
-	
 	self.selectedCellIndex = 0;
 	
 	self.delegate = self;
 	self.dataSource = self;
 	self.scrollEnabled = NO;
 	self.bounces = NO;
-
-	//Calculate Item Width
-	self.itemWidth = (self.superview.frame.size.width / [self.titles count]);
 	
-	//Setup Indicator
-	self.indicatorView = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - self.indicatorHeight, self.itemWidth, self.indicatorHeight)];
-	if (!self.titlesIndicatorColor) {
-		self.titlesIndicatorColor = [UIColor colorWithRed:0 green:(156.f/255.f) blue:(250.f/255.f) alpha:1.f];
-	}
-	
-	self.indicatorView.backgroundColor = self.titlesIndicatorColor;
-	[self addSubview:self.indicatorView];
 	
 	NSBundle *classBundle = [NSBundle bundleForClass:[PaginatorTitleCollectionViewCell class]];
 	[self registerNib:[UINib nibWithNibName:@"PaginatorTitleCollectionViewCell" bundle:classBundle] forCellWithReuseIdentifier:@"PaginatorTitleCell"];
-	
-	
 	
 }
 
@@ -77,13 +55,29 @@
 {
 	// You will get here when the reloadData finished
 	if (!layout) {
+		
+		//Check for indicator Height
+		if (self.indicatorHeight == 0.f) {
+			self.indicatorHeight = 2.0f;
+		}
+		//Calculate Item Width
+		self.itemWidth = (self.frame.size.width / [self.titles count]);
+		
+		//Setup Indicator
+		self.indicatorView = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - self.indicatorHeight, self.itemWidth, self.indicatorHeight)];
+		if (!self.titlesIndicatorColor) {
+			self.titlesIndicatorColor = [UIColor colorWithRed:0 green:(156.f/255.f) blue:(250.f/255.f) alpha:1.f];
+		}
+		self.indicatorView.backgroundColor = self.titlesIndicatorColor;
+		[self addSubview:self.indicatorView];
+		
 		layout = [[PaginatorTitleHorizontalViewFlowLayout alloc] init];
 		
 		layout.itemSize = CGSizeMake(self.itemWidth, self.frame.size.height-self.indicatorHeight);
 		layout.indicatorHeight = self.indicatorHeight;
 		self.collectionViewLayout = layout;
 		[self removeObserver:self forKeyPath:@"contentSize" context:NULL];
-
+		
 	}
 	
 }
