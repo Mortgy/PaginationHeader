@@ -18,10 +18,15 @@
 @end
 
 @implementation PaginatorTitlesCollectionView
+{
+	PaginatorTitleHorizontalViewFlowLayout * layout;
+}
 
 - (void)awakeFromNib {
 	[super awakeFromNib];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pageViewDidScroll:) name:@"PaginatorViewDidScrollToPage" object:nil];
+	[self addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionOld context:NULL];
+
 //	[[NSNotificationCenter defaultCenter] postNotificationName:@"PaginatorViewDidScrollToPage" object:currentPage];
 
 }
@@ -59,18 +64,27 @@
 	}
 	
 	self.indicatorView.backgroundColor = self.titlesIndicatorColor;
-
 	[self addSubview:self.indicatorView];
 	
-	PaginatorTitleHorizontalViewFlowLayout * layout = [[PaginatorTitleHorizontalViewFlowLayout alloc] init];
-	self.collectionViewLayout = layout;
-	
 	NSBundle *classBundle = [NSBundle bundleForClass:[PaginatorTitleCollectionViewCell class]];
-
 	[self registerNib:[UINib nibWithNibName:@"PaginatorTitleCollectionViewCell" bundle:classBundle] forCellWithReuseIdentifier:@"PaginatorTitleCell"];
 	
-	layout.itemSize = CGSizeMake(self.itemWidth, self.frame.size.height-self.indicatorHeight);
-	layout.indicatorHeight = self.indicatorHeight;
+	
+	
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary  *)change context:(void *)context
+{
+	// You will get here when the reloadData finished
+	if (!layout) {
+		layout = [[PaginatorTitleHorizontalViewFlowLayout alloc] init];
+		
+		layout.itemSize = CGSizeMake(self.itemWidth, self.frame.size.height-self.indicatorHeight);
+		layout.indicatorHeight = self.indicatorHeight;
+		self.collectionViewLayout = layout;
+		[self removeObserver:self forKeyPath:@"contentSize" context:NULL];
+
+	}
 	
 }
 

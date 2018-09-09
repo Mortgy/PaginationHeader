@@ -11,6 +11,14 @@
 #import "PaginatorViewCollectionViewCell.h"
 
 @implementation PaginatorViewsCollectionView
+{
+	PaginatorViewsHorizontalViewFlowLayout * layout;
+}
+
+- (void)awakeFromNib {
+	[super awakeFromNib];
+	[self addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionOld context:NULL];
+}
 
 - (void)setViews:(NSArray<UIView *> *)views {
 	_views = views;
@@ -28,11 +36,22 @@
 		[self registerNib:[UINib nibWithNibName:@"PaginatorViewCollectionViewCell" bundle:classBundle] forCellWithReuseIdentifier:[NSString stringWithFormat:@"PaginatorViewCell_%@", @(i).stringValue]];
 	}
 	
-	PaginatorViewsHorizontalViewFlowLayout * layout = [[PaginatorViewsHorizontalViewFlowLayout alloc] init];
-	layout.itemSize = self.frame.size;
-	self.collectionViewLayout = layout;
-	
+
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pageTitleGotSelected:) name:@"PaginatorTitleGotSelected" object:nil];
+
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary  *)change context:(void *)context
+{
+	// You will get here when the reloadData finished
+	if (!layout) {
+		layout = [[PaginatorViewsHorizontalViewFlowLayout alloc] init];
+		CGSize itemSize = self.superview.frame.size;
+		itemSize.height = self.frame.size.height;
+		layout.itemSize = itemSize;
+		self.collectionViewLayout = layout;
+		[self removeObserver:self forKeyPath:@"contentSize" context:NULL];
+	}
 
 }
 

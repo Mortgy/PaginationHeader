@@ -31,9 +31,8 @@
 	return UIEdgeInsetsMake(0, 0, 0, 0);
 }
 
-
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return self.itemSize;
+	return collectionView.frame.size;
 }
 
 @end
